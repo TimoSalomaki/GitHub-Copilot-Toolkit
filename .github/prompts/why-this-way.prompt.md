@@ -1,6 +1,6 @@
 ---
-mode: 'agent'
-tools: ['search', 'usages', 'think']
+agent: 'agent'
+tools: ['search', 'usages']
 description: 'Explain why code was written in a seemingly strange or unconventional way'
 ---
 

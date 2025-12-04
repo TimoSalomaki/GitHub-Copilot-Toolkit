@@ -1,5 +1,5 @@
 ---
-mode: 'agent'
+agent: 'agent'
 tools: ['runCommands', 'search', 'usages', 'think']
 description: 'Trace and analyze dependency chains from the currently active file or refine existing analysis'
 ---

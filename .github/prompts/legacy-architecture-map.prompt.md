@@ -1,6 +1,6 @@
 ---
-mode: 'agent'
-tools: ['search', 'runCommands', 'Azure MCP/search', 'usages', 'think', 'todos']
+agent: 'agent'
+tools: ['search', 'runCommands', 'Azure MCP/search', 'usages', 'todos']
 description: 'Generate or refine a comprehensive architecture map of the legacy codebase'
 ---
 

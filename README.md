@@ -24,6 +24,9 @@ These resources are:
 ![Dependency Chain Analyzer](img/dependency-chain-analyzer.jpg)
 **[Dependency Chain Analyzer](.github/prompts/dependency-chain-analyzer.prompt.md)**: Traces complete dependency chains for the active file in both directions, mapping transitive relationships multiple levels deep. Identifies circular dependencies, calculates blast radius, and supports iterative refinement of existing analyses.
 
+![AI Council](img/ai-council-prompt.jpg)
+**[AI Council](docs/ai-council.md)**: A multi-model deliberation system where Claude, GPT, and Gemini collaborate through structured debate to reach consensus on complex topics. Requires manual rotation between three prompts (`/council-claude`, `/council-gpt`, `/council-gemini`). See the [documentation](docs/ai-council.md) for usage instructions.
+
 
 ## How to use
 - Clone or download this repo, then copy any folders you want (`.github/chatmodes`, `.github/prompts`) into your workspace or profile locations.
