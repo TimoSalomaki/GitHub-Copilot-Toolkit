@@ -1,11 +1,10 @@
 # GitHub Copilot Toolkit
 
 ![GitHub Copilot Toolkit Hero Image](img/github-copilot-toolkit-hero-image.jpg)
-This repository contains my collection of GitHub Copilot prompts, chat modes, and other tools designed to help enterprises maximize value from GitHub Copilot, especially in large, complex, and legacy codebases.
+This repository contains my collection of GitHub Copilot [prompts](#included-prompts), [agents](#included-agents), and other tools designed to help enterprises maximize value from GitHub Copilot, especially in large, complex, and legacy codebases.
 
 These resources are:
 - **Constantly evolving** – updated based on real-world usage and feedback
-- **Not perfect** – consider them starting points for your own customization
 - **Enterprise-focused** – optimized for complex organizational needs
 
 ## Recommended prerequisites
@@ -61,7 +60,15 @@ If you want to keep the agents and/or prompts locally without sharing them in yo
 ![Dependency Chain Analyzer](img/dependency-chain-analyzer.jpg)
 **[Dependency Chain Analyzer](.github/prompts/dependency-chain-analyzer.prompt.md)**: Traces complete dependency chains for the active file in both directions, mapping transitive relationships multiple levels deep. Identifies circular dependencies, calculates blast radius, and supports iterative refinement of existing analyses.
 
+![AI Feature Ideation](img/ai-feature-ideation.jpg)
 **[AI Feature Ideation](.github/prompts/ai-feature-ideation.prompt.md)**: Guides teams to elicit priorities, scan opportunity areas, and produce a sequenced AI feature roadmap (low-lift wins → bigger bets) with data needs, guardrails, and success signals tailored to the application.
 
 ![AI Council](img/ai-council-prompt.jpg)
 **[AI Council](docs/ai-council.md)**: A multi-model deliberation system where Claude, GPT, and Gemini collaborate through structured debate to reach consensus on complex topics. Requires manual rotation between three prompts (`/council-claude`, `/council-gpt`, `/council-gemini`). See the [documentation](docs/ai-council.md) for usage instructions.
+
+## Contributing
+- Issues and PRs are welcome; please include context, repro steps (if applicable), and which prompt/agent you’re adjusting.
+- Keep additions consistent with the existing format (frontmatter, headings, images, and concise descriptions).
+
+## Licensing
+- Content in this repo is provided under the terms of the accompanying [`LICENSE`](LICENSE) file.
