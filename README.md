@@ -8,33 +8,18 @@ These resources are:
 - **Not perfect** – consider them starting points for your own customization
 - **Enterprise-focused** – optimized for complex organizational needs
 
-## Included Chat Modes
-
-![Dead Code Detective](img/dead-code-detective.jpg)
-**[Dead Code Detective](.github/chatmodes/dead-code-detective.chatmode.md)**: Systematically identifies unused code, functions, classes, and dependencies using a safety-first approach that checks for dynamic invocation, reflection, and configuration-driven usage patterns. Categorizes findings by confidence level and includes handoffs to review results, create removal plans, and execute cleanup safely.
-
-## Included Prompts
-
-![Why This Way?](img/why-this-way.jpg)
-**[Why This Way?](.github/prompts/why-this-way.prompt.md)**: Investigates puzzling code by analyzing its purpose, reviewing git history, and examining architectural context. Generates a report explaining what the code does, why it exists, and whether refactoring would be beneficial.
-
-![Legacy Architecture Map](img/legacy-architecture-map.jpg)
-**[Legacy Architecture Map](.github/prompts/legacy-architecture-map.prompt.md)**: Systematically explores codebases to create or refine architecture maps, identifying entry points, modules, layers, data flow, and dependencies. Works in both initial analysis and refinement modes, producing structured documentation with Mermaid diagrams.
-
-![Dependency Chain Analyzer](img/dependency-chain-analyzer.jpg)
-**[Dependency Chain Analyzer](.github/prompts/dependency-chain-analyzer.prompt.md)**: Traces complete dependency chains for the active file in both directions, mapping transitive relationships multiple levels deep. Identifies circular dependencies, calculates blast radius, and supports iterative refinement of existing analyses.
-
-![AI Council](img/ai-council-prompt.jpg)
-**[AI Council](docs/ai-council.md)**: A multi-model deliberation system where Claude, GPT, and Gemini collaborate through structured debate to reach consensus on complex topics. Requires manual rotation between three prompts (`/council-claude`, `/council-gpt`, `/council-gemini`). See the [documentation](docs/ai-council.md) for usage instructions.
-
+## Recommended prerequisites
+- VS Code with GitHub Copilot enabled and access to custom prompts/agents. See [official setup guide](https://code.visualstudio.com/docs/copilot/getting-started).
+- Basic familiarity with using custom prompts and agents in GitHub Copilot. See [official documentation](https://code.visualstudio.com/docs/copilot/customization/overview).
+- A codebase or project where you can test and adapt these tools.
 
 ## How to use
-- Clone or download this repo, then copy any folders you want (`.github/chatmodes`, `.github/prompts`) into your workspace or profile locations.
+- Clone or download this repo, then copy any folders you want (`.github/agents`, `.github/prompts`) into your workspace or profile locations.
 
 - See the diagram below for an example workspace structure:
 
-  ![Chatmodes and Prompts Workspace Structure](img/chatmodes-prompts-workspace.png)
-If you want to keep the chatmodes and/or prompts locally without sharing them in your repo, store them in the current [VS Code profile](https://code.visualstudio.com/docs/configure/profiles).
+  ![Agents and Prompts Workspace Structure](img/chatmodes-prompts-workspace.png)
+If you want to keep the agents and/or prompts locally without sharing them in your repo, store them in the current [VS Code profile](https://code.visualstudio.com/docs/configure/profiles).
 
 ### Prompts
 
@@ -48,14 +33,35 @@ If you want to keep the chatmodes and/or prompts locally without sharing them in
 
 3. More information about working with prompts is available in the [official documentation](https://code.visualstudio.com/docs/copilot/customization/prompt-files).
 
-### Chat Modes
+### Custom agents
 
-1. Select a chat mode by clicking the chat mode picker in the chat window.
+1. Select an agent by clicking the agent picker in the chat window.
 
-   ![Chat Mode Picker](img/select-custom-chat-mode.png)
+   ![Agent Picker](img/select-custom-chat-mode.png)
 
-2. You can simply start chatting with the selected mode active. Even a message like `Start` is enough to trigger the mode's behavior.
+2. You can simply start chatting with the selected mode active. Even a message like `Start` is enough to trigger the agents's behavior.
 
-   ![Start Chat Mode](img/start-chat-mode.png)
+   ![Start Agent](img/start-chat-mode.png)
 
-3. More information about working with chat modes is available in the [official documentation](https://code.visualstudio.com/docs/copilot/customization/custom-chat-modes)
+3. More information about working with custom agents is available in the [official documentation](https://code.visualstudio.com/docs/copilot/customization/custom-agents)
+
+## Included Agents
+
+![Dead Code Detective](img/dead-code-detective.jpg)
+**[Dead Code Detective](.github/agents/dead-code-detective.agent.md)**: Systematically identifies unused code, functions, classes, and dependencies using a safety-first approach that checks for dynamic invocation, reflection, and configuration-driven usage patterns. Categorizes findings by confidence level and includes handoffs to review results, create removal plans, and execute cleanup safely.
+
+## Included Prompts
+
+![Why This Way?](img/why-this-way.jpg)
+**[Why This Way?](.github/prompts/why-this-way.prompt.md)**: Investigates puzzling code by analyzing its purpose, reviewing git history, and examining architectural context. Generates a report explaining what the code does, why it exists, and whether refactoring would be beneficial.
+
+![Legacy Architecture Map](img/legacy-architecture-map.jpg)
+**[Legacy Architecture Map](.github/prompts/legacy-architecture-map.prompt.md)**: Systematically explores codebases to create or refine architecture maps, identifying entry points, modules, layers, data flow, and dependencies. Works in both initial analysis and refinement modes, producing structured documentation with Mermaid diagrams.
+
+![Dependency Chain Analyzer](img/dependency-chain-analyzer.jpg)
+**[Dependency Chain Analyzer](.github/prompts/dependency-chain-analyzer.prompt.md)**: Traces complete dependency chains for the active file in both directions, mapping transitive relationships multiple levels deep. Identifies circular dependencies, calculates blast radius, and supports iterative refinement of existing analyses.
+
+**[AI Feature Ideation](.github/prompts/ai-feature-ideation.prompt.md)**: Guides teams to elicit priorities, scan opportunity areas, and produce a sequenced AI feature roadmap (low-lift wins → bigger bets) with data needs, guardrails, and success signals tailored to the application.
+
+![AI Council](img/ai-council-prompt.jpg)
+**[AI Council](docs/ai-council.md)**: A multi-model deliberation system where Claude, GPT, and Gemini collaborate through structured debate to reach consensus on complex topics. Requires manual rotation between three prompts (`/council-claude`, `/council-gpt`, `/council-gemini`). See the [documentation](docs/ai-council.md) for usage instructions.

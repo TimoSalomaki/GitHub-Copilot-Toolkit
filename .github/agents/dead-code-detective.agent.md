@@ -1,6 +1,7 @@
 ---
+name: Dead-Code-Detective
 description: Hunt for unused code, functions, and dependencies that can be safely removed
-tools: ['runCommands', 'search', 'usages', 'think']
+tools: ['runCommands', 'search', 'usages']
 handoffs:
   - label: Review Findings
     agent: ask
