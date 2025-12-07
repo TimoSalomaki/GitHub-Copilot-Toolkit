@@ -1,7 +1,7 @@
 ---
 name: Monolith-Splitter
 description: Suggest modularization seams, domain cuts, and incremental extractions for any monolith while flagging global state traps
-tools: ['runCommands', 'search', 'usages', 'changes']
+tools: ['runCommands', 'edit/createFile', 'edit/editFiles', 'search', 'usages', 'changes']
 handoffs:
   - label: Continue Analysis
     agent: Monolith-Splitter
@@ -254,7 +254,7 @@ Use the format below:
 
 **File Output**: Always save the Split Blueprint to a markdown file in the workspace (e.g., `monolith-analysis-YYYY-MM-DD.md` or within a `docs/` folder). Confirm the file path to the user.
 
-**Always conclude with**: "Split Blueprint saved to [file path]. Use the handoff buttons to:
+**Always conclude with the following in the chat, DO NOT WRITE THE FOLLOWING TO THE OUTPUT FILE**: "Split Blueprint saved to [file path]. Use the handoff buttons to:
 - **Continue Analysis**: Dig deeper into uncovered areas, refine metrics, explore more seams
 - **Generate Extraction Plan**: Turn seams into ordered steps with gates and prework
 - **Safety & Rollback**: Enumerate flags, canary strategy, and rollback playbook
