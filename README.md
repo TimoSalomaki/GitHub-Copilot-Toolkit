@@ -49,6 +49,9 @@ If you want to keep the agents and/or prompts locally without sharing them in yo
 ![Dead Code Detective](img/dead-code-detective.jpg)
 **[Dead Code Detective](.github/agents/dead-code-detective.agent.md)**: Systematically identifies unused code, functions, classes, and dependencies using a safety-first approach that checks for dynamic invocation, reflection, and configuration-driven usage patterns. Categorizes findings by confidence level and includes handoffs to review results, create removal plans, and execute cleanup safely.
 
+![Monolith Splitter](img/monolith-splitter.jpg)
+**[Monolith Splitter](.github/agents/monolith-splitter.agent.md)**: Analyzes monolithic codebases to suggest modularization seams, domain cuts, and incremental extraction strategies. Measures coupling metrics, identifies global state traps, and generates detailed Split Blueprints with phased rollout plans, safety nets, and rollback procedures. Supports any monolith type with handoffs for planning, execution, and iterative analysis.
+
 ## Included Prompts
 
 ![Why This Way?](img/why-this-way.jpg)
